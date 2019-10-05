@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ColorfulNotes</string>
+    <string name="enter_notes_here">ENTER NOTES HERE</string>
+    <string name="btn_submi">SUBMIT</string>
+</resources>
