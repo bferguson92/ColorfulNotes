@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:cursorVisible="true"
         android:inputType="text"
+        android:textColor="@color/prefBlue"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:hint="@string/enter_notes_here"

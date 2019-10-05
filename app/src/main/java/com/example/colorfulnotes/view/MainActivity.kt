@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.colorfulnotes.R
@@ -40,11 +41,12 @@ class MainActivity : AppCompatActivity(), ColorAdapter.ColorAdapterDelegate {
         }
     }
 
-    fun setPref(color: String) {
+    private fun setPref(color: String) {
         SharedPref = this.getSharedPreferences("com.example.colorfulnote.preferencefile", 0)
         SharedPrefEditor = SharedPref.edit()
         SharedPrefEditor.putString("color", color)
         SharedPrefEditor.apply()
+
 
         val intent = Intent(this, NoteTakingActivity::class.java)
         startActivity(intent)
