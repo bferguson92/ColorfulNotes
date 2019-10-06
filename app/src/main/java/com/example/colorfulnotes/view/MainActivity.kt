@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity(), ColorAdapter.ColorAdapterDelegate {
     }
 
     private fun setPref(color: String) {
-        SharedPref = this.getSharedPreferences("com.example.colorfulnote.preferencefile", 0)
+        SharedPref = this.getSharedPreferences("com.example.colorfulnotes.file", 0)
         SharedPrefEditor = SharedPref.edit()
         SharedPrefEditor.putString("color", color)
         SharedPrefEditor.apply()

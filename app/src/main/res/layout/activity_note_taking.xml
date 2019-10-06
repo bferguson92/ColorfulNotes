@@ -11,10 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:cursorVisible="true"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         android:textColor="@color/prefBlue"
+        android:background="@null"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:hint="@string/enter_notes_here"
         android:importantForAutofill="no"/>
 
@@ -25,12 +25,13 @@
         android:text="@string/btn_submi"
         android:layout_marginLeft="@dimen/dim_btn_margin"
         android:layout_marginRight="@dimen/dim_btn_margin"
-        app:layout_constraintTop_toBottomOf="@+id/etNote" />
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvNotes" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNotes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/btnSave"  />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,4 +7,5 @@
     <color name="prefPurple">#800080</color>
     <color name="prefBlue">#0000FF</color>
     <color name="appWhite">#FFFFFF</color>
+    <color name="color_transparent">#00000000</color>
 </resources>

@@ -14,6 +14,7 @@ class ColorAdapter(private val colors: List<String>, private val delagtor: Color
     RecyclerView.Adapter<ColorAdapter.CustomViewHolder>() {
     private lateinit var context: Context
 
+
     interface ColorAdapterDelegate {
         fun pickedColor(color: String)
     }
